@@ -33,6 +33,19 @@ namespace ConsoleApp1
 
             #endregion
 
+            #region Question 02
+
+            ////Q02: What is the difference between a field and a property in C#?
+            ////1. Field is dirct data storage and not provide validation BUT Propert is controlled access ans provide validation.
+
+            ////Can a property contain logic? //yes
+            ////Give an example of a read-only property that returns a calculated value.
+            //ReadOnlyExample ex01 = new ReadOnlyExample(10);
+            ////ex01.Number = 1; //Invalid 
+            //Console.WriteLine(ex01.Number); //100
+
+            #endregion
+
             #endregion
         }
     }
