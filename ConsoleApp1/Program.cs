@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
 using System.Security.Principal;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp1
 {
@@ -43,6 +46,29 @@ namespace ConsoleApp1
             //ReadOnlyExample ex01 = new ReadOnlyExample(10);
             ////ex01.Number = 1; //Invalid 
             //Console.WriteLine(ex01.Number); //100
+
+            #endregion
+
+            #region Question 03
+            //public class StudentRegister
+            //{
+            //    private string[] names = new string[5];
+
+            //    public string this[int index]
+            //    {
+            //        get { return names[index]; }
+            //        set { names[index] = value; }
+            //    }
+            //}
+            //a) What is `this[int index]` called? Explain its purpose.
+            //indexer. An indexer lets an object be accessed using array-like syntax
+
+            //b) What happens if someone writes `register[10] = "Ali";` ? => throw exeption (OutOfRange)
+            //How would you make the indexer safer?
+            //use validation to throw exeption
+
+            //c) Can a class have more than one indexer? If yes, give an example of when that would be useful.
+            //when you want to access data in different ways for example, by numeric index or by string key.
 
             #endregion
 
