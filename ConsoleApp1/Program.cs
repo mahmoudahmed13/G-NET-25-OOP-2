@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic;
+﻿using ConsoleApp1.Part02;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -87,10 +88,81 @@ namespace ConsoleApp1
 
             //a) What does the `static` keyword mean on `TotalOrders`? How is it different from the `Item` field?
             //it's shared field, we call it by class no instance. 
-           
+
             //b) Can a static method inside `Order` access the `Item` field directly? Why or why not?
             //No, beacuase static method belong the class don't neet instance but Item field must need instance to assign it.
             #endregion
+
+            #endregion
+
+            #region Part 02
+
+            //Cinema cinema = new Cinema();
+
+            //Console.WriteLine("========== Ticket Booking ==========");
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine($"--- Enter data for Ticket #{i} ---");
+            //    Console.Write("Enter Movie Name: ");
+            //    string? movieName = Console.ReadLine();
+
+            //    //type
+            //    TicketType type;
+            //    int typeValue;
+            //    bool IsValid;
+            //    do
+            //    {
+            //        Console.Write($"Enter Ticket Type (0 = Standard , 1 = VIP , 2 = IMAX )" +
+            //            $": ");
+            //        IsValid = int.TryParse(Console.ReadLine(), out typeValue);
+            //        type = (TicketType)typeValue;
+
+            //    } while (!IsValid || !Enum.IsDefined(typeof(TicketType), typeValue));
+
+            //    //seat
+            //    Console.Write($"Seat Row (A, B, C...): ");
+            //    char seatChar = Convert.ToChar(Console.ReadLine().ToUpper());
+            //    Console.Write($"Seat Number: ");
+            //    int seatInt = Convert.ToInt32(Console.ReadLine());
+
+            //    //price
+            //    Console.Write("Enter Price : ");
+            //    bool priceTrue = int.TryParse(Console.ReadLine(), out int price);
+
+            //    Ticket ticket = new Ticket();
+            //    ticket.MovieName = movieName;
+            //    ticket.Type = type;
+            //    ticket.Seat = new SeatLocation() { rowChar = seatChar, rowInt = seatInt };
+            //    ticket.Price = price;
+
+            //    cinema.AddTicket(ticket);
+                
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("========== All Tickets ==========");
+            //Console.WriteLine();
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine($"Ticket #{i} - {cinema[i].MovieName} - {cinema[i].Type} -" +
+            //        $" Seat: {cinema[i].Seat.ToString()} - Price: {cinema[i].Price} EGP - After Tax: {cinema[i].PriceAfterTax} EGP");
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("========== Search by Movie ==========");
+            //Console.WriteLine();
+
+            //Console.Write("Enter movie name to search: ");
+            //string? movie = Console.ReadLine();
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    if (cinema[movie].MovieName == movie)
+            //    {
+            //        Console.WriteLine($"Ticket #{i} - {cinema[movie].MovieName} - {cinema[movie].Type} -" +
+            //        $" Seat: {cinema[movie].Seat.ToString()} - Price: {cinema[movie].Price} EGP - After Tax: {cinema[movie].PriceAfterTax} EGP");
+            //        return;
+            //    }
+            //    Console.WriteLine("This Movie Name Not Fount");
+            //}
 
             #endregion
         }
