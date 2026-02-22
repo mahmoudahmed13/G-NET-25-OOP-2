@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Security.Principal;
@@ -70,6 +71,25 @@ namespace ConsoleApp1
             //c) Can a class have more than one indexer? If yes, give an example of when that would be useful.
             //when you want to access data in different ways for example, by numeric index or by string key.
 
+            #endregion
+
+            #region Question 04
+            //    public class Order
+            //{
+            //    public static int TotalOrders = 0;
+            //    public string Item;
+
+            //    public Order(string item)
+            //    {
+            //        Item = item;
+            //        TotalOrders++;
+            //    }
+
+            //a) What does the `static` keyword mean on `TotalOrders`? How is it different from the `Item` field?
+            //it's shared field, we call it by class no instance. 
+           
+            //b) Can a static method inside `Order` access the `Item` field directly? Why or why not?
+            //No, beacuase static method belong the class don't neet instance but Item field must need instance to assign it.
             #endregion
 
             #endregion

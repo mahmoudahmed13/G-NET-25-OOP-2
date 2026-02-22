@@ -8,6 +8,7 @@ namespace ConsoleApp1
 {
     internal class ReadOnlyExample
     {
+        private static int X { get; set; }
         private int _number = 0;
         public int Number
         {
@@ -16,6 +17,7 @@ namespace ConsoleApp1
         public ReadOnlyExample(int number)
         {
             _number = number;
+            X = number;
         }
     }
 }
